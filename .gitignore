@@ -1,24 +1,4 @@
-cat > .gitignore <<'EOF'
-# Terraform working files
-**/.terraform/*
+terraform.tfvars
 *.tfstate
 *.tfstate.*
-crash.log
-crash.*.log
-
-# Terraform variable files may contain secrets
-*.tfvars
-*.tfvars.json
-*.auto.tfvars
-*.auto.tfvars.json
-
-# Local override files
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
-
-# Sensitive local CLI configuration
-.terraformrc
-terraform.rc
-EOF
+.terraform/
