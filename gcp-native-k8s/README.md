@@ -62,3 +62,7 @@ The included GitHub Actions workflow runs Terraform formatting and validation on
 - `modules/vm`: reusable private VM definition
 - `.github/workflows/terraform.yml`: formatting and validation checks
 
+Script:
+cd /workspaces/gcp-terraform/gcp-native-k8s
+mkdir -p scripts
+nano scripts/bootstrap-kubeadm.sh
